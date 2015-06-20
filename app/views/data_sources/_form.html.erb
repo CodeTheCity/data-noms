@@ -12,6 +12,7 @@
     <%= form.collection_select(:format_id, Format.all, :id, :name) %>
   </div>
   <div class="form-row">
+    <%= link_to 'cancel', data_sources_path %>
     <%= form.submit %>
   </div>
 <% end %>
