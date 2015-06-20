@@ -28,6 +28,7 @@ PRs welcome. Fork the repo, make your changes, submit a PR.
 ## Etc
 
 Author: Alan Gardner
+
 License: MIT
 
 Created during Code The City 4 out of Edinburgh.
