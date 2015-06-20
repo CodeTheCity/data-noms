@@ -1,6 +1,6 @@
-# Data Nom (working title)
+# Data Noms (working title)
 
-Data Nom will let you preview open data and tell you if it passes muster, both in its current format and any format that you care to convert it into.
+Data Noms will let you preview open data and tell you if it passes muster, both in its current format and any format that you care to convert it into.
 
 
 ## Installing
