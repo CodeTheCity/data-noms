@@ -22,6 +22,27 @@ RSpec.describe DataSourcesController, type: :controller do
     end
   end
 
+  describe 'GET show' do
+    let(:data_source) { DataSource.new(id: 1) }
+
+    before :each do
+      allow(DataSource).to receive(:find).with('1').and_return(:data_source)
+      get :show, id: '1'
+    end
+
+    it 'finds the requested data_source' do
+      expect(DataSource).to have_received(:find).with('1')
+    end
+
+    it 'assigns the data_source' do
+      expect(assigns[:data_source]).to eq(:data_source)
+    end
+
+    it 'renders the show template' do
+      expect(response).to render_template(:show)
+    end
+  end
+
   describe 'GET new' do
     before :each do
       get :new

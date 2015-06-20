@@ -3,6 +3,10 @@ class DataSourcesController < ApplicationController
     @data_sources = DataSource.all
   end
 
+  def show
+    @data_source = DataSource.find(params[:id])
+  end
+
   def new
     @data_source = DataSource.new
   end
