@@ -1,0 +1,17 @@
+<%= form_for data_source do |form| %>
+  <div class="form-row">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="form-row">
+    <%= form.label :url %>
+    <%= form.text_field :url %>
+  </div>
+  <div class="form-row">
+    <%= form.label :format %>
+    <%= form.collection_select(:format_id, Format.all, :id, :name) %>
+  </div>
+  <div class="form-row">
+    <%= form.submit %>
+  </div>
+<% end %>

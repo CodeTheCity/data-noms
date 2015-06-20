@@ -1,0 +1,20 @@
+<h1>Data Sources</h1>
+
+<%= link_to 'Add new data source', new_data_source_path %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Url</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @data_sources.each do |data_source| %>
+      <tr>
+        <td><%= link_to data_source.name, data_source %></td>
+        <td><%= link_to data_source.url, data_source.url %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
